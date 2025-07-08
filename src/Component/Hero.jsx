@@ -179,21 +179,21 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Image - Hidden on small screens */}
-        <div className="xl:w-1/2 w-full flex items-center justify-center hidden lg:block mt-8 lg:mt-0">
-          <div className="relative bg-black border border-none dark:border-gray-300 rounded-lg p-2 dark:bg-white">
+        {/* Right Image with badges visible on all screens */}
+        <div className="xl:w-1/2 w-full flex items-center justify-center mt-8 lg:mt-0">
+          <div className="relative bg-black border border-none dark:border-gray-300 rounded-lg p-2 dark:bg-white w-[90%] sm:w-[70%] md:w-[60%]">
             <img
-              className="h-[80%] object-center object-cover rounded-md"
+              className="w-full object-center object-cover rounded-md"
               src={image}
               alt="Uchechi Augusta Aku"
             />
-            <div className="absolute bg-green-600 text-gray-800 shadow-md shadow-green-600 animate-bounce px-2 py-1 rounded top-10 -left-10 border border-gray-400 z-10">
+            <div className="absolute bg-green-600 text-gray-800 shadow-md shadow-green-600 animate-bounce px-2 py-1 rounded top-4 left-2 sm:top-10 sm:-left-10 border border-gray-400 z-10 text-xs sm:text-sm">
               <h3 className="font-bold">Data Entry Specialist</h3>
             </div>
-            <div className="absolute bg-green-600 text-gray-800 shadow-md shadow-green-600 animate-bounce px-2 py-1 rounded top-1/2 -right-14 border border-gray-400 z-10">
+            <div className="absolute bg-green-600 text-gray-800 shadow-md shadow-green-600 animate-bounce px-2 py-1 rounded top-1/2 right-2 sm:-right-14 border border-gray-400 z-10 text-xs sm:text-sm">
               <h3 className="font-bold">Sales Executive</h3>
             </div>
-            <div className="absolute bg-green-600 text-gray-800 shadow-md shadow-green-600 animate-bounce px-2 py-1 rounded bottom-20 -left-14 border border-gray-400 z-10">
+            <div className="absolute bg-green-600 text-gray-800 shadow-md shadow-green-600 animate-bounce px-2 py-1 rounded bottom-8 left-2 sm:bottom-20 sm:-left-14 border border-gray-400 z-10 text-xs sm:text-sm">
               <h3 className="font-bold">Customer Support</h3>
             </div>
           </div>
